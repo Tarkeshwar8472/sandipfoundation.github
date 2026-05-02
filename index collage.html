@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Sandip Foundation Shri Ram Polytechnic student gateway with basic details, campus highlights, hostel photos, placement support, and chairman profile."
+  />
+  <title>Sandip Foundation Shri Ram Polytechnic | Student Gateway</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="college-style.css" />
+</head>
+<body class="page-home">
+  <header class="hero home-hero" id="home">
+    <div class="topbar">
+      <div class="container topbar-wrap">
+        <p>Admissions Open for Session 2026-28 | Student Gateway and Guided College Journey</p>
+        <div class="topbar-links">
+          <a href="tel:+9118002500600">Helpline: +91 1800 2500 600</a>
+          <a href="mailto:admissions@sandipfoundation.edu.in">admissions@sandipfoundation.edu.in</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar container">
+      <a class="brand-mark" href="#home" aria-label="Sandip Foundation Shri Ram Polytechnic home">
+        <img src="logo.png" alt="Sandip Foundation Shri Ram Polytechnic logo" />
+        <span class="brand-copy">
+          <strong>Sandip Foundation Shri Ram Polytechnic</strong>
+          <small>Student Gateway | First Step for Admission</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="menu" id="site-menu">
+        <li><a href="#portal-access">Login / Signup</a></li>
+        <li><a href="#online-admission">Admission Form</a></li>
+        <li><a href="#notice-board">Notices</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#student-gateway">Student Details</a></li>
+        <li><a href="#chairman">Chairman</a></li>
+        <li><a href="#placement">Placement</a></li>
+        <li><a href="college-details.html">Next Page</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content container hero-layout">
+      <div class="hero-copy" data-reveal>
+        <p class="tag"> | Student Basic Details First</p>
+        <h1>Start your admission journey with a student-first, guided and professional experience.</h1>
+        <p>
+          This first page is designed for students and parents to begin with basic details, then explore
+          the chairman profile, placement highlights, classrooms, hostels and campus moments before moving
+          to the full college details page.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#portal-access">Open Student Portal</a>
+          <a class="btn btn-light" href="#online-admission">Apply Online</a>
+        </div>
+        <div class="hero-actions">
+          <a class="btn" href="#student-gateway">Fill Basic Details</a>
+          <a class="btn btn-light" href="college-details.html">Go to College Details</a>
+        </div>
+        <div class="hero-trust-strip">
+          <article>
+            <strong>Step 1</strong>
+            <span>Student basic profile submission</span>
+          </article>
+          <article>
+            <strong>Step 2</strong>
+            <span>Complete college information page</span>
+          </article>
+          <article>
+            <strong>Step 3</strong>
+            <span>Admission form and backend record</span>
+          </article>
+        </div>
+      </div>
+
+      <div class="hero-showcase" data-reveal>
+        <div class="hero-main-photo">
+          <img src="sijoul-campus-menu.avif" alt="Sandip Foundation campus view" />
+          <div class="hero-photo-badge">
+            <strong>Campus, student support, placement and hostels in one guided flow</strong>
+            <span>Designed to make the first impression clear, complete and professional.</span>
+          </div>
+        </div>
+        <div class="hero-photo-strip" aria-label="Campus and student life images">
+          <img src="h.jpg" alt="Front campus building" />
+          <img src="download (7)200.jpg" alt="Laboratory classroom" />
+          <img src="g.jpg" alt="Academic building location view" />
+          <img src="images.jpg" alt="Hostel room interior" />
+          <img src="hostel girl.jpg" alt="Girls hostel room" />
+          <img src="download (2).jpg" alt="Placement support moment" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container quick-highlights">
+      <div class="grid stats">
+        <article data-reveal><strong>22+</strong><span>Years of Academic Trust</span></article>
+        <article data-reveal><strong>180+</strong><span>Recruiting Partners</span></article>
+        <article data-reveal><strong>120+</strong><span>Experienced Faculty</span></article>
+        <article data-reveal><strong>82%</strong><span>Placement Support Success</span></article>
+      </div>
+    </section>
+
+    <section class="section container" id="portal-access">
+      <div class="section-heading-block narrow" data-reveal>
+        <p class="mini-tag">Login and Signup</p>
+        <h2>Separate access for students and administrators on one clean portal screen.</h2>
+        <p>
+          New students can create an account for admission tracking, while returning students and admins
+          can sign in to manage applications, notices, events and result records.
+        </p>
+      </div>
+
+      <div class="portal-layout">
+        <article class="card portal-card" data-reveal>
+          <div class="portal-switch" role="tablist" aria-label="Portal type">
+            <button class="portal-tab is-active" type="button" data-portal-target="student-portal" aria-selected="true">Student Login / Signup</button>
+            <button class="portal-tab" type="button" data-portal-target="admin-portal" aria-selected="false">Admin Login</button>
+          </div>
+
+          <div class="portal-panel is-active" id="student-portal">
+            <div class="portal-grid">
+              <form id="studentLoginForm" class="form-grid">
+                <label>
+                  Student Email
+                  <input type="email" name="studentEmail" placeholder="student@example.com" required />
+                </label>
+                <label>
+                  Password
+                  <input type="password" name="studentPassword" placeholder="Enter password" required />
+                </label>
+                <div class="form-actions full-width">
+                  <button type="submit" class="btn">Student Login</button>
+                </div>
+              </form>
+
+              <div class="portal-signup">
+                <h3>Create Student Account</h3>
+                <p>Register once to save admission details, receive notices and download your result updates.</p>
+                <form id="studentSignupForm" class="form-grid">
+                  <label>
+                    Full Name
+                    <input type="text" name="signupName" placeholder="Enter full name" required />
+                  </label>
+                  <label>
+                    Mobile Number
+                    <input type="tel" name="signupMobile" placeholder="Enter mobile number" pattern="[0-9]{10}" required />
+                  </label>
+                  <label class="full-width">
+                    Email Address
+                    <input type="email" name="signupEmail" placeholder="Enter email address" required />
+                  </label>
+                  <label class="full-width">
+                    Password
+                    <input type="password" name="signupPassword" placeholder="Create password" required />
+                  </label>
+                  <div class="form-actions full-width">
+                    <button type="submit" class="btn btn-secondary">Signup Now</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div id="portalStatus" class="status-banner" hidden></div>
+          </div>
+
+          <div class="portal-panel" id="admin-portal" hidden>
+            <div class="portal-grid single-panel">
+              <form id="adminLoginForm" class="form-grid">
+                <label>
+                  Admin ID
+                  <input type="text" name="adminId" placeholder="Enter admin ID" required />
+                </label>
+                <label>
+                  Password
+                  <input type="password" name="adminPassword" placeholder="Enter admin password" required />
+                </label>
+                <label class="full-width">
+                  Role
+                  <select name="adminRole" required>
+                    <option value="">Select role</option>
+                    <option>Admission Office</option>
+                    <option>Academic Cell</option>
+                    <option>Examination Cell</option>
+                  </select>
+                </label>
+                <div class="form-actions full-width">
+                  <button type="submit" class="btn">Admin Login</button>
+                </div>
+              </form>
+              <div class="saved-box">
+                <h4>Admin Access Use</h4>
+                <p>Admins can publish notices, upload event details, verify admissions and maintain result records.</p>
+                <p><strong>Demo Admin:</strong> ID `ADMIN001` | Password `admin123`</p>
+              </div>
+            </div>
+            <div id="adminStatus" class="status-banner" hidden></div>
+          </div>
+        </article>
+
+        <aside class="card portal-side-panel" data-reveal>
+          <div class="section-heading">
+            <p class="mini-tag">Portal Benefits</p>
+            <h3>Why create an account?</h3>
+          </div>
+          <div class="feature-stack">
+            <article>
+              <strong>Admission Tracking</strong>
+              <span>Follow your application from enquiry to final verification.</span>
+            </article>
+            <article>
+              <strong>Instant Notices</strong>
+              <span>See admission alerts, class updates and scholarship announcements.</span>
+            </article>
+            <article>
+              <strong>Result Access</strong>
+              <span>Check semester results with a simple roll number search.</span>
+            </article>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section alt" id="online-admission">
+      <div class="container">
+        <div class="section-heading-block" data-reveal>
+          <p class="mini-tag">Online Admission Form</p>
+          <h2>One online path for student details, document readiness and final admission submission.</h2>
+        </div>
+
+        <div class="admission-top-grid">
+          <article class="card admission-entry" data-reveal>
+            <h3>Step 1: Basic Details</h3>
+            <p>Start from the student gateway on this page and save your personal and course information.</p>
+          </article>
+          <article class="card admission-entry" data-reveal>
+            <h3>Step 2: Full Admission Form</h3>
+            <p>Move to the dedicated admission page for guardian details, address, education and document notes.</p>
+          </article>
+          <article class="card admission-entry" data-reveal>
+            <h3>Step 3: Admin Verification</h3>
+            <p>The admin team reviews entries and confirms the application for the next admission stage.</p>
+          </article>
+        </div>
+
+        <div class="next-step-banner" data-reveal>
+          <div>
+            <p class="mini-tag">Apply Now</p>
+            <h2>Open the online admission page and continue the application.</h2>
+            <p>Students can begin here, then proceed to the full online form for final submission and admin review.</p>
+          </div>
+          <div class="hero-actions compact-actions">
+            <a class="btn" href="admission.php">Open Admission Form</a>
+            <a class="btn btn-light" href="#student-gateway">Fill Basic Details First</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="notice-board">
+      <div class="section-heading-block" data-reveal>
+        <p class="mini-tag">Notice Board</p>
+        <h2>Latest announcements for admissions, academics and campus support.</h2>
+      </div>
+      <div class="updates-grid" id="noticeList">
+        <article class="card update-card" data-reveal>
+          <p class="update-label">Loading</p>
+          <h3>Notice board is loading.</h3>
+          <p>Please wait while the latest announcements are being fetched.</p>
+          <span>Student Portal</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt" id="events">
+      <div class="container">
+        <div class="section-heading-block" data-reveal>
+          <p class="mini-tag">Event Section</p>
+          <h2>Upcoming campus events that help students connect with academics and careers.</h2>
+        </div>
+        <div class="updates-grid" id="eventList">
+          <article class="card event-card" data-reveal>
+            <div class="event-date">
+              <strong>..</strong>
+              <span>..</span>
+            </div>
+            <div>
+              <h3>Event section is loading.</h3>
+              <p>Please wait while current campus events are being fetched.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="results">
+      <div class="section-heading-block narrow" data-reveal>
+        <p class="mini-tag">Result Section</p>
+        <h2>Simple result lookup for students and a quick summary area for examination updates.</h2>
+      </div>
+      <div class="portal-layout">
+        <article class="card result-card" data-reveal>
+          <form id="resultLookupForm" class="form-grid">
+            <label>
+              Roll Number
+              <input type="text" name="rollNumber" placeholder="Enter roll number" required />
+            </label>
+            <label>
+              Semester
+              <select name="semester" required>
+                <option value="">Select semester</option>
+                <option>Semester 1</option>
+                <option>Semester 2</option>
+                <option>Semester 3</option>
+                <option>Semester 4</option>
+                <option>Semester 5</option>
+                <option>Semester 6</option>
+              </select>
+            </label>
+            <div class="form-actions full-width">
+              <button type="submit" class="btn">Check Result</button>
+            </div>
+          </form>
+
+          <div id="resultPreview" class="result-preview">
+            Enter a roll number and semester to preview the result lookup panel.
+          </div>
+        </article>
+
+        <aside class="card portal-side-panel" data-reveal>
+          <div class="section-heading">
+            <p class="mini-tag">Examination Cell</p>
+            <h3>Result Support</h3>
+          </div>
+          <div class="feature-stack">
+            <article>
+              <strong>Semester Updates</strong>
+              <span>Results are published semester-wise after examination cell approval.</span>
+            </article>
+            <article>
+              <strong>Recheck Requests</strong>
+              <span>Students can contact the academic office if marks verification is required.</span>
+            </article>
+            <article>
+              <strong>Admin Maintenance</strong>
+              <span>The admin portal can later be linked to database-backed result upload features.</span>
+            </article>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section container" id="student-gateway">
+      <div class="section-heading-block narrow" data-reveal>
+        <p class="mini-tag">Student Gateway</p>
+        <h2>Enter the student basic details first, then continue to the next page.</h2>
+        <p>
+          Students begin here with the essential profile details. After saving this information, the
+          Continue button will open the second page where the complete college information is presented.
+        </p>
+      </div>
+
+      <div class="gateway-layout">
+        <article class="card gateway-form-card" data-reveal>
+          <form id="basicDetailsForm" class="form-grid">
+            <label>
+              Student Name <span class="required-mark">*</span>
+              <input type="text" name="studentName" placeholder="Enter full name" required />
+            </label>
+            <label>
+              Mobile Number <span class="required-mark">*</span>
+              <input type="tel" name="mobile" placeholder="Enter 10-digit number" pattern="[0-9]{10}" required />
+            </label>
+            <label>
+              Date of Birth <span class="required-mark">*</span>
+              <input type="date" name="dob" required />
+            </label>
+            <label>
+              Preferred Program <span class="required-mark">*</span>
+              <select name="program" required>
+                <option value="">Select program</option>
+                <option>Diploma in Computer Engineering</option>
+                <option>Diploma in Civil Engineering</option>
+                <option>Diploma in Mechanical Engineering</option>
+                <option>Diploma in Electrical Engineering</option>
+                <option>B.Tech in Computer Science</option>
+                <option>B.Tech in Civil Engineering</option>
+              </select>
+            </label>
+            <label>
+              Branch <span class="required-mark">*</span>
+              <select name="branch" required>
+                <option value="">Select branch</option>
+                <option>Computer Engineering</option>
+                <option>Civil Engineering</option>
+                <option>Mechanical Engineering</option>
+                <option>Electrical Engineering</option>
+                <option>Electronics Engineering</option>
+              </select>
+            </label>
+            <label>
+              City <span class="required-mark">*</span>
+              <input type="text" name="city" placeholder="Enter city" required />
+            </label>
+            <label class="full-width">
+              State <span class="required-mark">*</span>
+              <select name="state" required>
+                <option value="">Select state</option>
+                <option>Bihar</option>
+                <option>Jharkhand</option>
+                <option>West Bengal</option>
+                <option>Uttar Pradesh</option>
+                <option>Maharashtra</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <div class="form-actions full-width">
+              <button type="submit" class="btn">Save and Continue</button>
+              <a class="btn btn-light" href="college-details.html">Skip to Next Page</a>
+            </div>
+          </form>
+        </article>
+
+        <aside class="card preview-card" data-reveal>
+          <div class="section-heading">
+            <p class="mini-tag">Live Preview</p>
+            <h3>Student Basic Profile</h3>
+          </div>
+          <div id="basicPreview" class="preview-placeholder">
+            The student preview will appear here while the form is being filled.
+          </div>
+          <div class="saved-box">
+            <h4>Journey Note</h4>
+            <p>The second page opens after this step and the third page opens from the Admission button on that page.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section alt" id="chairman">
+      <div class="container">
+        <div class="section-heading-block" data-reveal>
+          <p class="mini-tag">Chairman Profile</p>
+          <h2>Leadership that brings discipline, trust and long-term academic vision.</h2>
+        </div>
+        <div class="leader-layout">
+          <article class="card chairman-feature" data-reveal>
+            <img class="chairman-portrait" src="chairman-sir1.jpg" alt="Chairman Dr. Sandip Jha" />
+            <div>
+              <p class="mini-tag">Chairman</p>
+              <h3>Dr. Sandip Jha</h3>
+              <p>
+                The institution is guided with a strong focus on quality education, practical exposure, student
+                confidence, discipline and career development for learners from every background.
+              </p>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <h3>Student-First Vision</h3>
+            <p>Every student should feel informed and supported from the first visit to the final admission stage.</p>
+            <h3>Career Direction</h3>
+            <p>The campus culture aims to build confident professionals through labs, mentoring and placement support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="placement">
+      <div class="section-heading-block" data-reveal>
+        <p class="mini-tag">Placement Highlights</p>
+        <h2>Career support begins early and stays visible from the first page itself.</h2>
+      </div>
+      <div class="placement-feature-grid">
+        <article class="card media-card" data-reveal>
+          <img src="download (2).jpg" alt="Placement support and recruiter moment" />
+          <div>
+            <h3>Placement Readiness</h3>
+            <p>Students receive aptitude preparation, interview mentoring, resume guidance and recruiter interaction support.</p>
+          </div>
+        </article>
+        <article class="card placement-stat-card" data-reveal>
+          <div class="placement-stats-grid">
+            <div><strong>180+</strong><span>Recruiters</span></div>
+            <div><strong>82%</strong><span>Placement Support Success</span></div>
+            <div><strong>12 LPA</strong><span>Highest Package</span></div>
+            <div><strong>4.5 LPA</strong><span>Average Package</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt" id="campus-gallery">
+      <div class="container">
+        <div class="section-heading-block" data-reveal>
+          <p class="mini-tag">Campus and Learning Spaces</p>
+          <h2>Academic spaces, campus views and learning environments placed beside the right content.</h2>
+        </div>
+        <div class="gallery-grid">
+          <article class="card image-story" data-reveal>
+            <img src="h.jpg" alt="Main college entrance building" />
+            <h3>Main Campus Front</h3>
+            <p>A welcoming front campus view that presents the institution with a strong and modern visual identity.</p>
+          </article>
+          <article class="card image-story" data-reveal>
+            <img src="g.jpg" alt="Academic building and location view" />
+            <h3>Academic Block View</h3>
+            <p>The location view gives a practical look at the building and helps visitors understand the campus setting.</p>
+          </article>
+          <article class="card image-story" data-reveal>
+            <img src="download (7)200.jpg" alt="Laboratory classroom and practical room" />
+            <h3>Laboratory and Classroom Space</h3>
+            <p>This learning room highlights practical education, equipment use and guided classroom interaction.</p>
+          </article>
+          <article class="card image-story" data-reveal>
+            <img src="classroom-visit-1.jpeg" alt="Students in classroom" />
+            <h3>Student Learning Environment</h3>
+            <p>Live academic activity shows how students engage with regular classroom learning and faculty support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="hostel-life">
+      <div class="section-heading-block" data-reveal>
+        <p class="mini-tag">Hostel Life</p>
+        <h2>Boys hostel and girls hostel photos placed in their own section on the first page.</h2>
+      </div>
+      <div class="gallery-grid">
+        <article class="card image-story" data-reveal>
+          <img src="images.jpg" alt="Boys hostel room interior" />
+          <h3>Boys Hostel Room</h3>
+          <p>A clean, shared room environment that supports daily student comfort and routine hostel life.</p>
+        </article>
+        <article class="card image-story" data-reveal>
+          <img src="hostel girl.jpg" alt="Girls hostel room interior" />
+          <h3>Girls Hostel Room</h3>
+          <p>The girls hostel space presents a bright and secure living area designed for comfort and convenience.</p>
+        </article>
+        <article class="card image-story" data-reveal>
+          <img src="download (5).jpg" alt="Campus life area" />
+          <h3>Student Residential Atmosphere</h3>
+          <p>Campus living is supported with access, safety, discipline and everyday support for students staying on site.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container next-step-banner" data-reveal>
+        <div>
+          <p class="mini-tag">Next Step</p>
+          <h2>Proceed to the complete college details page.</h2>
+          <p>The second page contains the full institute overview, departments, facilities, college details and the Admission button for the final page.</p>
+        </div>
+        <a class="btn" href="college-details.html">Continue to Page 2</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <p>&copy; <span id="current-year">2026</span> Sandip Foundation Shri Ram Polytechnic. All rights reserved.</p>
+      <a href="college-details.html">Go to Page 2</a>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const siteMenu = document.querySelector(".menu");
+    const basicDetailsForm = document.getElementById("basicDetailsForm");
+    const basicPreview = document.getElementById("basicPreview");
+    const portalTabs = document.querySelectorAll(".portal-tab");
+    const portalPanels = document.querySelectorAll(".portal-panel");
+    const studentLoginForm = document.getElementById("studentLoginForm");
+    const studentSignupForm = document.getElementById("studentSignupForm");
+    const adminLoginForm = document.getElementById("adminLoginForm");
+    const portalStatus = document.getElementById("portalStatus");
+    const adminStatus = document.getElementById("adminStatus");
+    const noticeList = document.getElementById("noticeList");
+    const eventList = document.getElementById("eventList");
+    const resultLookupForm = document.getElementById("resultLookupForm");
+    const resultPreview = document.getElementById("resultPreview");
+    const basicStorageKey = "sandipStudentBasicProfile";
+
+    if (menuToggle && siteMenu) {
+      menuToggle.addEventListener("click", () => {
+        const isOpen = siteMenu.classList.toggle("is-open");
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+    }
+
+    const revealItems = document.querySelectorAll("[data-reveal]");
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.14 }
+    );
+
+    revealItems.forEach((item) => revealObserver.observe(item));
+
+    portalTabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const targetId = tab.dataset.portalTarget;
+
+        portalTabs.forEach((item) => {
+          item.classList.remove("is-active");
+          item.setAttribute("aria-selected", "false");
+        });
+
+        portalPanels.forEach((panel) => {
+          const isTarget = panel.id === targetId;
+          panel.classList.toggle("is-active", isTarget);
+          panel.hidden = !isTarget;
+        });
+
+        tab.classList.add("is-active");
+        tab.setAttribute("aria-selected", "true");
+      });
+    });
+
+    const showStatus = (element, message, type = "success") => {
+      if (!element) return;
+      element.hidden = false;
+      element.className = `status-banner ${type === "error" ? "error-banner" : "success-banner"}`;
+      element.textContent = message;
+    };
+
+    const escapeHtml = (value) => String(value ?? "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#39;");
+
+    const postJson = async (url, payload) => {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload)
+      });
+
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data.message || "Request failed.");
+      }
+
+      return data;
+    };
+
+    if (studentLoginForm) {
+      studentLoginForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        if (!studentLoginForm.reportValidity()) {
+          return;
+        }
+
+        const values = Object.fromEntries(new FormData(studentLoginForm).entries());
+        try {
+          const data = await postJson("auth.php", {
+            action: "student_login",
+            email: values.studentEmail,
+            password: values.studentPassword
+          });
+          showStatus(portalStatus, data.message);
+          window.location.href = data.redirect;
+        } catch (error) {
+          showStatus(portalStatus, error.message, "error");
+        }
+      });
+    }
+
+    if (studentSignupForm) {
+      studentSignupForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        if (!studentSignupForm.reportValidity()) {
+          return;
+        }
+
+        const values = Object.fromEntries(new FormData(studentSignupForm).entries());
+        try {
+          const data = await postJson("auth.php", {
+            action: "student_signup",
+            name: values.signupName,
+            mobile: values.signupMobile,
+            email: values.signupEmail,
+            password: values.signupPassword
+          });
+          showStatus(portalStatus, data.message);
+          window.location.href = data.redirect;
+        } catch (error) {
+          showStatus(portalStatus, error.message, "error");
+        }
+      });
+    }
+
+    if (adminLoginForm) {
+      adminLoginForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        if (!adminLoginForm.reportValidity()) {
+          return;
+        }
+
+        const values = Object.fromEntries(new FormData(adminLoginForm).entries());
+        try {
+          const data = await postJson("auth.php", {
+            action: "admin_login",
+            id: values.adminId,
+            password: values.adminPassword,
+            role: values.adminRole
+          });
+          showStatus(adminStatus, data.message);
+          window.location.href = data.redirect;
+        } catch (error) {
+          showStatus(adminStatus, error.message, "error");
+        }
+      });
+    }
+
+    const updateBasicPreview = () => {
+      const values = Object.fromEntries(new FormData(basicDetailsForm).entries());
+      const hasContent = Object.values(values).some((value) => value && value.trim() !== "");
+
+      if (!hasContent) {
+        basicPreview.className = "preview-placeholder";
+        basicPreview.textContent = "The student preview will appear here while the form is being filled.";
+        return;
+      }
+
+      basicPreview.className = "preview-list";
+      basicPreview.innerHTML = `
+        <div><strong>Student Name:</strong> ${values.studentName || "-"}</div>
+        <div><strong>Mobile Number:</strong> ${values.mobile || "-"}</div>
+        <div><strong>Date of Birth:</strong> ${values.dob || "-"}</div>
+        <div><strong>Preferred Program:</strong> ${values.program || "-"}</div>
+        <div><strong>Branch:</strong> ${values.branch || "-"}</div>
+        <div><strong>City:</strong> ${values.city || "-"}</div>
+        <div><strong>State:</strong> ${values.state || "-"}</div>
+      `;
+    };
+
+    const savedProfile = JSON.parse(sessionStorage.getItem(basicStorageKey) || "null");
+    if (savedProfile) {
+      Object.entries(savedProfile).forEach(([key, value]) => {
+        const field = basicDetailsForm.elements.namedItem(key);
+        if (field) {
+          field.value = value;
+        }
+      });
+    }
+
+    basicDetailsForm.addEventListener("input", updateBasicPreview);
+    basicDetailsForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      if (!basicDetailsForm.reportValidity()) {
+        return;
+      }
+
+      const values = Object.fromEntries(new FormData(basicDetailsForm).entries());
+      sessionStorage.setItem(basicStorageKey, JSON.stringify(values));
+      window.location.href = "college-details.html";
+    });
+
+    if (resultLookupForm && resultPreview) {
+      resultLookupForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        if (!resultLookupForm.reportValidity()) {
+          return;
+        }
+
+        const values = Object.fromEntries(new FormData(resultLookupForm).entries());
+        try {
+          const data = await postJson("result-api.php", values);
+          resultPreview.innerHTML = `
+            <strong>${escapeHtml(data.result.studentName)}</strong>
+            <span>Roll Number: ${escapeHtml(data.result.rollNumber)}</span>
+            <span>${escapeHtml(data.result.semester)}</span>
+            <span>Status: ${escapeHtml(data.result.status)}</span>
+            <span>Percentage: ${escapeHtml(data.result.percentage)}</span>
+            <span>Published: ${escapeHtml(data.result.publishedAt)}</span>
+          `;
+        } catch (error) {
+          resultPreview.innerHTML = `
+            <strong>Result Not Found</strong>
+            <span>${escapeHtml(error.message)}</span>
+          `;
+        }
+      });
+    }
+
+    const renderNotices = (items) => {
+      if (!noticeList) return;
+      if (!items.length) {
+        noticeList.innerHTML = `
+          <article class="card update-card">
+            <p class="update-label">Notice</p>
+            <h3>No notices available right now.</h3>
+            <p>Please check back later for new updates.</p>
+            <span>Student Portal</span>
+          </article>
+        `;
+        return;
+      }
+
+      noticeList.innerHTML = items.map((notice, index) => `
+        <article class="card update-card notice-card ${index === 0 ? "priority" : ""}" data-reveal>
+          <p class="update-label">${escapeHtml(notice.label || "Notice")}</p>
+          <h3>${escapeHtml(notice.title || "")}</h3>
+          <p>${escapeHtml(notice.message || "")}</p>
+          <span>Updated by ${escapeHtml(notice.author || "Admin")}</span>
+        </article>
+      `).join("");
+    };
+
+    const renderEvents = (items) => {
+      if (!eventList) return;
+      if (!items.length) {
+        eventList.innerHTML = `
+          <article class="card event-card">
+            <div class="event-date">
+              <strong>--</strong>
+              <span>--</span>
+            </div>
+            <div>
+              <h3>No events available right now.</h3>
+              <p>Please check back later for upcoming campus activities.</p>
+            </div>
+          </article>
+        `;
+        return;
+      }
+
+      eventList.innerHTML = items.map((item) => `
+        <article class="card event-card" data-reveal>
+          <div class="event-date">
+            <strong>${escapeHtml(item.day || "--")}</strong>
+            <span>${escapeHtml(item.month || "--")}</span>
+          </div>
+          <div>
+            <h3>${escapeHtml(item.title || "")}</h3>
+            <p>${escapeHtml(item.message || "")}</p>
+          </div>
+        </article>
+      `).join("");
+    };
+
+    fetch("public-data.php")
+      .then((response) => response.json())
+      .then((data) => {
+        renderNotices(Array.isArray(data.notices) ? data.notices : []);
+        renderEvents(Array.isArray(data.events) ? data.events : []);
+      })
+      .catch(() => {
+        renderNotices([]);
+        renderEvents([]);
+      });
+
+    updateBasicPreview();
+
+    const currentYear = document.getElementById("current-year");
+    if (currentYear) {
+      currentYear.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>
