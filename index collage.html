@@ -52,7 +52,7 @@
         <li><a href="#student-gateway">Student Details</a></li>
         <li><a href="#chairman">Chairman</a></li>
         <li><a href="#placement">Placement</a></li>
-        <li><a href="college-details.html">Next Page</a></li>
+        <li><a href="college-details.html" class="journey-link is-locked" data-next-page-link aria-disabled="true">Next Page</a></li>
       </ul>
     </nav>
 
@@ -71,7 +71,7 @@
         </div>
         <div class="hero-actions">
           <a class="btn" href="#student-gateway">Fill Basic Details</a>
-          <a class="btn btn-light" href="college-details.html">Go to College Details</a>
+          <a class="btn btn-light journey-link is-locked" href="college-details.html" data-next-page-link aria-disabled="true">Go to College Details</a>
         </div>
         <div class="hero-trust-strip">
           <article>
@@ -90,6 +90,46 @@
       </div>
 
       <div class="hero-showcase" data-reveal>
+        <aside class="journey-orbit card" data-reveal>
+          <p class="mini-tag">Guided Journey</p>
+          <h3>Feel the first page before moving ahead.</h3>
+          <p>Page 2 unlocks only after the student journey below is completed step by step.</p>
+          <div class="journey-progress-shell">
+            <div class="journey-progress-bar">
+              <span id="journeyProgressFill"></span>
+            </div>
+            <strong id="journeyProgressText">0% completed</strong>
+          </div>
+          <div class="journey-checklist" id="journeyChecklist">
+            <article data-step-card="portal">
+              <strong>1. Open student portal section</strong>
+              <span>Understand login, signup and account benefits.</span>
+            </article>
+            <article data-step-card="details">
+              <strong>2. Save basic student details</strong>
+              <span>Complete the first form before moving forward.</span>
+            </article>
+            <article data-step-card="chairman">
+              <strong>3. Meet the chairman vision</strong>
+              <span>See the leadership message and academic direction.</span>
+            </article>
+            <article data-step-card="placement">
+              <strong>4. Explore placements</strong>
+              <span>Review support, outcomes and career preparation.</span>
+            </article>
+            <article data-step-card="campus">
+              <strong>5. View campus spaces</strong>
+              <span>Experience labs, classes and learning spaces.</span>
+            </article>
+            <article data-step-card="hostel">
+              <strong>6. Check hostel life</strong>
+              <span>See how on-campus living feels for students.</span>
+            </article>
+          </div>
+          <div id="journeyGateStatus" class="journey-gate-status locked">
+            Page 2 is locked. Complete the first-page experience to continue.
+          </div>
+        </aside>
         <div class="hero-main-photo">
           <img src="sijoul-campus-menu.avif" alt="Sandip Foundation campus view" />
           <div class="hero-photo-badge">
@@ -119,7 +159,7 @@
       </div>
     </section>
 
-    <section class="section container" id="portal-access">
+    <section class="section container journey-step-section" id="portal-access" data-journey-step="portal">
       <div class="section-heading-block narrow" data-reveal>
         <p class="mini-tag">Login and Signup</p>
         <h2>Separate access for students and administrators on one clean portal screen.</h2>
@@ -367,7 +407,7 @@
       </div>
     </section>
 
-    <section class="section container" id="student-gateway">
+    <section class="section container journey-step-section" id="student-gateway" data-journey-step="details-preview">
       <div class="section-heading-block narrow" data-reveal>
         <p class="mini-tag">Student Gateway</p>
         <h2>Enter the student basic details first, then continue to the next page.</h2>
@@ -432,10 +472,11 @@
               </select>
             </label>
             <div class="form-actions full-width">
-              <button type="submit" class="btn">Save and Continue</button>
-              <a class="btn btn-light" href="college-details.html">Skip to Next Page</a>
+              <button type="submit" class="btn">Save Basic Details</button>
+              <a class="btn btn-light journey-link is-locked" href="college-details.html" data-next-page-link aria-disabled="true">Continue to Page 2</a>
             </div>
           </form>
+          <div id="basicFormStatus" class="status-banner" hidden></div>
         </article>
 
         <aside class="card preview-card" data-reveal>
@@ -454,7 +495,7 @@
       </div>
     </section>
 
-    <section class="section alt" id="chairman">
+    <section class="section alt journey-step-section" id="chairman" data-journey-step="chairman">
       <div class="container">
         <div class="section-heading-block" data-reveal>
           <p class="mini-tag">Chairman Profile</p>
@@ -482,7 +523,7 @@
       </div>
     </section>
 
-    <section class="section container" id="placement">
+    <section class="section container journey-step-section" id="placement" data-journey-step="placement">
       <div class="section-heading-block" data-reveal>
         <p class="mini-tag">Placement Highlights</p>
         <h2>Career support begins early and stays visible from the first page itself.</h2>
@@ -506,7 +547,7 @@
       </div>
     </section>
 
-    <section class="section alt" id="campus-gallery">
+    <section class="section alt journey-step-section" id="campus-gallery" data-journey-step="campus">
       <div class="container">
         <div class="section-heading-block" data-reveal>
           <p class="mini-tag">Campus and Learning Spaces</p>
@@ -537,7 +578,7 @@
       </div>
     </section>
 
-    <section class="section container" id="hostel-life">
+    <section class="section container journey-step-section" id="hostel-life" data-journey-step="hostel">
       <div class="section-heading-block" data-reveal>
         <p class="mini-tag">Hostel Life</p>
         <h2>Boys hostel and girls hostel photos placed in their own section on the first page.</h2>
@@ -565,10 +606,13 @@
       <div class="container next-step-banner" data-reveal>
         <div>
           <p class="mini-tag">Next Step</p>
-          <h2>Proceed to the complete college details page.</h2>
-          <p>The second page contains the full institute overview, departments, facilities, college details and the Admission button for the final page.</p>
+          <h2>Proceed only after the first page experience is complete.</h2>
+          <p id="nextStepMessage">The second page will unlock after the student explores the first-page journey and saves the basic details form.</p>
         </div>
-        <a class="btn" href="college-details.html">Continue to Page 2</a>
+        <div class="next-step-stack">
+          <a class="btn journey-link is-locked" href="college-details.html" data-next-page-link aria-disabled="true">Continue to Page 2</a>
+          <span class="journey-hint">Locked until all first-page steps are completed.</span>
+        </div>
       </div>
     </section>
   </main>
@@ -576,7 +620,7 @@
   <footer>
     <div class="container footer-wrap">
       <p>&copy; <span id="current-year">2026</span> Sandip Foundation Shri Ram Polytechnic. All rights reserved.</p>
-      <a href="college-details.html">Go to Page 2</a>
+      <a href="college-details.html" class="journey-link is-locked" data-next-page-link aria-disabled="true">Go to Page 2</a>
     </div>
   </footer>
 
@@ -596,7 +640,32 @@
     const eventList = document.getElementById("eventList");
     const resultLookupForm = document.getElementById("resultLookupForm");
     const resultPreview = document.getElementById("resultPreview");
+    const basicFormStatus = document.getElementById("basicFormStatus");
+    const nextPageLinks = document.querySelectorAll("[data-next-page-link]");
+    const journeySections = document.querySelectorAll("[data-journey-step]");
+    const journeyCards = document.querySelectorAll("[data-step-card]");
+    const journeyProgressFill = document.getElementById("journeyProgressFill");
+    const journeyProgressText = document.getElementById("journeyProgressText");
+    const nextStepMessage = document.getElementById("nextStepMessage");
+    const journeyGateStatus = document.getElementById("journeyGateStatus");
     const basicStorageKey = "sandipStudentBasicProfile";
+    const journeyStorageKey = "sandipFirstPageJourney";
+    const journeyState = {
+      portal: false,
+      details: false,
+      chairman: false,
+      placement: false,
+      campus: false,
+      hostel: false
+    };
+    const journeyTargets = {
+      portal: "#portal-access",
+      details: "#student-gateway",
+      chairman: "#chairman",
+      placement: "#placement",
+      campus: "#campus-gallery",
+      hostel: "#hostel-life"
+    };
 
     if (menuToggle && siteMenu) {
       menuToggle.addEventListener("click", () => {
@@ -619,6 +688,109 @@
     );
 
     revealItems.forEach((item) => revealObserver.observe(item));
+
+    const loadJourneyState = () => {
+      try {
+        const saved = JSON.parse(sessionStorage.getItem(journeyStorageKey) || "null");
+        if (saved && typeof saved === "object") {
+          Object.keys(journeyState).forEach((key) => {
+            journeyState[key] = Boolean(saved[key]);
+          });
+        }
+      } catch (error) {
+        // Ignore corrupted session data and continue with a fresh journey state.
+      }
+    };
+
+    const saveJourneyState = () => {
+      sessionStorage.setItem(journeyStorageKey, JSON.stringify(journeyState));
+    };
+
+    const isJourneyComplete = () => Object.values(journeyState).every(Boolean);
+
+    const updateJourneyUI = () => {
+      const completed = Object.values(journeyState).filter(Boolean).length;
+      const total = Object.keys(journeyState).length;
+      const progress = Math.round((completed / total) * 100);
+
+      if (journeyProgressFill) {
+        journeyProgressFill.style.width = `${progress}%`;
+      }
+
+      if (journeyProgressText) {
+        journeyProgressText.textContent = `${progress}% completed`;
+      }
+
+      journeyCards.forEach((card) => {
+        const step = card.dataset.stepCard;
+        const done = Boolean(journeyState[step]);
+        card.classList.toggle("is-complete", done);
+      });
+
+      const unlocked = isJourneyComplete();
+      nextPageLinks.forEach((link) => {
+        link.classList.toggle("is-locked", !unlocked);
+        link.classList.toggle("is-unlocked", unlocked);
+        link.setAttribute("aria-disabled", String(!unlocked));
+      });
+
+      if (nextStepMessage) {
+        nextStepMessage.textContent = unlocked
+          ? "You have completed the first-page journey. Now the complete college details page is unlocked."
+          : "The second page will unlock after the student explores the first-page journey and saves the basic details form.";
+      }
+
+      if (journeyGateStatus) {
+        journeyGateStatus.className = `journey-gate-status ${unlocked ? "unlocked" : "locked"}`;
+        journeyGateStatus.textContent = unlocked
+          ? "Journey complete. Page 2 is now unlocked for the student."
+          : `Page 2 is locked. Complete ${total - completed} more step${total - completed === 1 ? "" : "s"} on this page.`;
+      }
+    };
+
+    const markJourneyStep = (step) => {
+      if (!step || !(step in journeyState) || journeyState[step]) {
+        return;
+      }
+
+      journeyState[step] = true;
+      saveJourneyState();
+      updateJourneyUI();
+    };
+
+    loadJourneyState();
+    updateJourneyUI();
+
+    journeySections.forEach((section) => {
+      revealObserver.observe(section);
+    });
+
+    const stepObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            markJourneyStep(entry.target.dataset.journeyStep);
+            stepObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.55 }
+    );
+
+    journeySections.forEach((section) => stepObserver.observe(section));
+
+    nextPageLinks.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        if (!isJourneyComplete()) {
+          event.preventDefault();
+          const firstIncomplete = Object.entries(journeyState).find(([, done]) => !done)?.[0];
+          const targetSection = firstIncomplete ? document.querySelector(journeyTargets[firstIncomplete]) : null;
+          if (targetSection) {
+            targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }
+      });
+    });
 
     portalTabs.forEach((tab) => {
       tab.addEventListener("click", () => {
@@ -770,6 +942,7 @@
           field.value = value;
         }
       });
+      markJourneyStep("details");
     }
 
     basicDetailsForm.addEventListener("input", updateBasicPreview);
@@ -781,7 +954,9 @@
 
       const values = Object.fromEntries(new FormData(basicDetailsForm).entries());
       sessionStorage.setItem(basicStorageKey, JSON.stringify(values));
-      window.location.href = "college-details.html";
+      markJourneyStep("details");
+      showStatus(basicFormStatus, "Basic details saved. Complete the remaining first-page journey to unlock Page 2.");
+      document.getElementById("chairman")?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
 
     if (resultLookupForm && resultPreview) {
